@@ -1,0 +1,53 @@
+
+.filepond--credits {
+  display: none;
+}
+
+.filepond--drop-label {
+  background-color: #ECF7E9;
+  height: auto!important;
+}
+
+.images {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.images_child {
+  display: contents;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.filepond--root * {
+  height: auto;
+  padding: 0 4px;
+}
+
+img {
+  width: 25%;
+  opacity: 0.8;
+  filter: grayscale(100%);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
